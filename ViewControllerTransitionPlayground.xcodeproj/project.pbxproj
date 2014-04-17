@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20522B218FF146600D93007 /* DDHGravityAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F20522B118FF146600D93007 /* DDHGravityAnimator.m */; };
+		F20522B818FF14CF00D93007 /* DDHSnapPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F20522B518FF14CF00D93007 /* DDHSnapPopAnimator.m */; };
+		F20522B918FF14CF00D93007 /* DDHSnapPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F20522B718FF14CF00D93007 /* DDHSnapPushAnimator.m */; };
+		F20522BC18FF91C100D93007 /* DDHGravityPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F20522BB18FF91C100D93007 /* DDHGravityPushAnimator.m */; };
 		F297E59018FDB2C300D73C3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F297E58F18FDB2C300D73C3A /* Foundation.framework */; };
 		F297E59218FDB2C300D73C3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F297E59118FDB2C300D73C3A /* CoreGraphics.framework */; };
 		F297E59418FDB2C300D73C3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F297E59318FDB2C300D73C3A /* UIKit.framework */; };
@@ -22,6 +26,7 @@
 		F297E5B418FDB2C300D73C3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F297E59318FDB2C300D73C3A /* UIKit.framework */; };
 		F297E5BC18FDB2C300D73C3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F297E5BA18FDB2C300D73C3A /* InfoPlist.strings */; };
 		F297E5BE18FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F297E5BD18FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests.m */; };
+		F297E5C918FDB5B700D73C3A /* DDHNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F297E5C818FDB5B700D73C3A /* DDHNavigationControllerDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F20522B018FF146600D93007 /* DDHGravityAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHGravityAnimator.h; path = TransitionAnimators/DDHGravityAnimator.h; sourceTree = "<group>"; };
+		F20522B118FF146600D93007 /* DDHGravityAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHGravityAnimator.m; path = TransitionAnimators/DDHGravityAnimator.m; sourceTree = "<group>"; };
+		F20522B418FF14CF00D93007 /* DDHSnapPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHSnapPopAnimator.h; path = TransitionAnimators/DDHSnapPopAnimator.h; sourceTree = "<group>"; };
+		F20522B518FF14CF00D93007 /* DDHSnapPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHSnapPopAnimator.m; path = TransitionAnimators/DDHSnapPopAnimator.m; sourceTree = "<group>"; };
+		F20522B618FF14CF00D93007 /* DDHSnapPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHSnapPushAnimator.h; path = TransitionAnimators/DDHSnapPushAnimator.h; sourceTree = "<group>"; };
+		F20522B718FF14CF00D93007 /* DDHSnapPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHSnapPushAnimator.m; path = TransitionAnimators/DDHSnapPushAnimator.m; sourceTree = "<group>"; };
+		F20522BA18FF91C100D93007 /* DDHGravityPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHGravityPushAnimator.h; path = TransitionAnimators/DDHGravityPushAnimator.h; sourceTree = "<group>"; };
+		F20522BB18FF91C100D93007 /* DDHGravityPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHGravityPushAnimator.m; path = TransitionAnimators/DDHGravityPushAnimator.m; sourceTree = "<group>"; };
 		F297E58C18FDB2C300D73C3A /* ViewControllerTransitionPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerTransitionPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F297E58F18FDB2C300D73C3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F297E59118FDB2C300D73C3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +69,8 @@
 		F297E5B918FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewControllerTransitionPlaygroundTests-Info.plist"; sourceTree = "<group>"; };
 		F297E5BB18FDB2C300D73C3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F297E5BD18FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTransitionPlaygroundTests.m; sourceTree = "<group>"; };
+		F297E5C718FDB5B700D73C3A /* DDHNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHNavigationControllerDelegate.h; sourceTree = "<group>"; };
+		F297E5C818FDB5B700D73C3A /* DDHNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHNavigationControllerDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +97,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F20522B318FF14B900D93007 /* TransitionAnimators */ = {
+			isa = PBXGroup;
+			children = (
+				F20522B418FF14CF00D93007 /* DDHSnapPopAnimator.h */,
+				F20522B518FF14CF00D93007 /* DDHSnapPopAnimator.m */,
+				F20522B618FF14CF00D93007 /* DDHSnapPushAnimator.h */,
+				F20522B718FF14CF00D93007 /* DDHSnapPushAnimator.m */,
+				F20522B018FF146600D93007 /* DDHGravityAnimator.h */,
+				F20522B118FF146600D93007 /* DDHGravityAnimator.m */,
+				F20522BA18FF91C100D93007 /* DDHGravityPushAnimator.h */,
+				F20522BB18FF91C100D93007 /* DDHGravityPushAnimator.m */,
+			);
+			name = TransitionAnimators;
+			sourceTree = "<group>";
+		};
 		F297E58318FDB2C300D73C3A = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +152,9 @@
 				F297E5A518FDB2C300D73C3A /* DDHMasterViewController.m */,
 				F297E5A718FDB2C300D73C3A /* DDHDetailViewController.h */,
 				F297E5A818FDB2C300D73C3A /* DDHDetailViewController.m */,
+				F297E5C718FDB5B700D73C3A /* DDHNavigationControllerDelegate.h */,
+				F297E5C818FDB5B700D73C3A /* DDHNavigationControllerDelegate.m */,
+				F20522B318FF14B900D93007 /* TransitionAnimators */,
 				F297E5AA18FDB2C300D73C3A /* Images.xcassets */,
 				F297E59618FDB2C300D73C3A /* Supporting Files */,
 			);
@@ -257,8 +290,13 @@
 			files = (
 				F297E5A618FDB2C300D73C3A /* DDHMasterViewController.m in Sources */,
 				F297E59C18FDB2C300D73C3A /* main.m in Sources */,
+				F297E5C918FDB5B700D73C3A /* DDHNavigationControllerDelegate.m in Sources */,
+				F20522BC18FF91C100D93007 /* DDHGravityPushAnimator.m in Sources */,
+				F20522B218FF146600D93007 /* DDHGravityAnimator.m in Sources */,
 				F297E5A918FDB2C300D73C3A /* DDHDetailViewController.m in Sources */,
+				F20522B918FF14CF00D93007 /* DDHSnapPushAnimator.m in Sources */,
 				F297E5A018FDB2C300D73C3A /* DDHAppDelegate.m in Sources */,
+				F20522B818FF14CF00D93007 /* DDHSnapPopAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +501,7 @@
 				F297E5C318FDB2C300D73C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F297E5C418FDB2C300D73C3A /* Build configuration list for PBXNativeTarget "ViewControllerTransitionPlaygroundTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +510,7 @@
 				F297E5C618FDB2C300D73C3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
