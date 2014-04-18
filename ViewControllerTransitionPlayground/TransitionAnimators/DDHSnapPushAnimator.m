@@ -8,17 +8,13 @@
 
 #import "DDHSnapPushAnimator.h"
 
-@interface DDHSnapPushAnimator ()
-@property (nonatomic) UIDynamicAnimator* animator;
-@end
-
 @implementation DDHSnapPushAnimator
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 0.5f;
+    return 0.8f;
 }
 
-- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
+- (UIDynamicAnimator*)animateForTransitionContext:(id<UIViewControllerContextTransitioning>)transitionContext {
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
@@ -26,14 +22,11 @@
     
     [[transitionContext containerView] addSubview:toViewController.view];
     
-    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:[transitionContext containerView]];
+    UIDynamicAnimator *animator = [[UIDynamicAnimator alloc] initWithReferenceView:[transitionContext containerView]];
     UISnapBehavior* snapBehavior = [[UISnapBehavior alloc] initWithItem:toViewController.view snapToPoint:fromViewController.view.center];
-    [self.animator addBehavior:snapBehavior];
+    [animator addBehavior:snapBehavior];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.animator = nil;
-        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
-    });
+    return animator;
 }
 
 @end

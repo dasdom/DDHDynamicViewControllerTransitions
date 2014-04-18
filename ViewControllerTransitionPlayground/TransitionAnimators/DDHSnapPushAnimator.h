@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 dasdom. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DDHTransitionAnimator.h"
 
-@interface DDHSnapPushAnimator : NSObject <UIViewControllerAnimatedTransitioning>
+@interface DDHSnapPushAnimator : DDHTransitionAnimator
 
 @end

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F20522B218FF146600D93007 /* DDHGravityAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F20522B118FF146600D93007 /* DDHGravityAnimator.m */; };
 		F20522B818FF14CF00D93007 /* DDHSnapPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F20522B518FF14CF00D93007 /* DDHSnapPopAnimator.m */; };
 		F20522B918FF14CF00D93007 /* DDHSnapPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F20522B718FF14CF00D93007 /* DDHSnapPushAnimator.m */; };
 		F20522BC18FF91C100D93007 /* DDHGravityPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F20522BB18FF91C100D93007 /* DDHGravityPushAnimator.m */; };
@@ -27,6 +26,9 @@
 		F297E5BC18FDB2C300D73C3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F297E5BA18FDB2C300D73C3A /* InfoPlist.strings */; };
 		F297E5BE18FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F297E5BD18FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests.m */; };
 		F297E5C918FDB5B700D73C3A /* DDHNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F297E5C818FDB5B700D73C3A /* DDHNavigationControllerDelegate.m */; };
+		F2D535FD1901602300944D18 /* DDHGravityPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D535FC1901602300944D18 /* DDHGravityPopAnimator.m */; };
+		F2F919D219006C39004FCB32 /* DDHTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F919D119006C39004FCB32 /* DDHTransitionAnimator.m */; };
+		F2F919D51901258B004FCB32 /* DDHGravityRotationPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F919D41901258B004FCB32 /* DDHGravityRotationPushAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F20522B018FF146600D93007 /* DDHGravityAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHGravityAnimator.h; path = TransitionAnimators/DDHGravityAnimator.h; sourceTree = "<group>"; };
-		F20522B118FF146600D93007 /* DDHGravityAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHGravityAnimator.m; path = TransitionAnimators/DDHGravityAnimator.m; sourceTree = "<group>"; };
 		F20522B418FF14CF00D93007 /* DDHSnapPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHSnapPopAnimator.h; path = TransitionAnimators/DDHSnapPopAnimator.h; sourceTree = "<group>"; };
 		F20522B518FF14CF00D93007 /* DDHSnapPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHSnapPopAnimator.m; path = TransitionAnimators/DDHSnapPopAnimator.m; sourceTree = "<group>"; };
 		F20522B618FF14CF00D93007 /* DDHSnapPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHSnapPushAnimator.h; path = TransitionAnimators/DDHSnapPushAnimator.h; sourceTree = "<group>"; };
@@ -71,6 +71,12 @@
 		F297E5BD18FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTransitionPlaygroundTests.m; sourceTree = "<group>"; };
 		F297E5C718FDB5B700D73C3A /* DDHNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHNavigationControllerDelegate.h; sourceTree = "<group>"; };
 		F297E5C818FDB5B700D73C3A /* DDHNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHNavigationControllerDelegate.m; sourceTree = "<group>"; };
+		F2D535FB1901602300944D18 /* DDHGravityPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHGravityPopAnimator.h; path = TransitionAnimators/DDHGravityPopAnimator.h; sourceTree = "<group>"; };
+		F2D535FC1901602300944D18 /* DDHGravityPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHGravityPopAnimator.m; path = TransitionAnimators/DDHGravityPopAnimator.m; sourceTree = "<group>"; };
+		F2F919D019006C39004FCB32 /* DDHTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHTransitionAnimator.h; path = TransitionAnimators/DDHTransitionAnimator.h; sourceTree = "<group>"; };
+		F2F919D119006C39004FCB32 /* DDHTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHTransitionAnimator.m; path = TransitionAnimators/DDHTransitionAnimator.m; sourceTree = "<group>"; };
+		F2F919D31901258B004FCB32 /* DDHGravityRotationPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHGravityRotationPushAnimator.h; path = TransitionAnimators/DDHGravityRotationPushAnimator.h; sourceTree = "<group>"; };
+		F2F919D41901258B004FCB32 /* DDHGravityRotationPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHGravityRotationPushAnimator.m; path = TransitionAnimators/DDHGravityRotationPushAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,14 +106,18 @@
 		F20522B318FF14B900D93007 /* TransitionAnimators */ = {
 			isa = PBXGroup;
 			children = (
-				F20522B418FF14CF00D93007 /* DDHSnapPopAnimator.h */,
-				F20522B518FF14CF00D93007 /* DDHSnapPopAnimator.m */,
+				F2F919D019006C39004FCB32 /* DDHTransitionAnimator.h */,
+				F2F919D119006C39004FCB32 /* DDHTransitionAnimator.m */,
 				F20522B618FF14CF00D93007 /* DDHSnapPushAnimator.h */,
 				F20522B718FF14CF00D93007 /* DDHSnapPushAnimator.m */,
-				F20522B018FF146600D93007 /* DDHGravityAnimator.h */,
-				F20522B118FF146600D93007 /* DDHGravityAnimator.m */,
+				F20522B418FF14CF00D93007 /* DDHSnapPopAnimator.h */,
+				F20522B518FF14CF00D93007 /* DDHSnapPopAnimator.m */,
 				F20522BA18FF91C100D93007 /* DDHGravityPushAnimator.h */,
 				F20522BB18FF91C100D93007 /* DDHGravityPushAnimator.m */,
+				F2D535FB1901602300944D18 /* DDHGravityPopAnimator.h */,
+				F2D535FC1901602300944D18 /* DDHGravityPopAnimator.m */,
+				F2F919D31901258B004FCB32 /* DDHGravityRotationPushAnimator.h */,
+				F2F919D41901258B004FCB32 /* DDHGravityRotationPushAnimator.m */,
 			);
 			name = TransitionAnimators;
 			sourceTree = "<group>";
@@ -292,11 +302,13 @@
 				F297E59C18FDB2C300D73C3A /* main.m in Sources */,
 				F297E5C918FDB5B700D73C3A /* DDHNavigationControllerDelegate.m in Sources */,
 				F20522BC18FF91C100D93007 /* DDHGravityPushAnimator.m in Sources */,
-				F20522B218FF146600D93007 /* DDHGravityAnimator.m in Sources */,
 				F297E5A918FDB2C300D73C3A /* DDHDetailViewController.m in Sources */,
 				F20522B918FF14CF00D93007 /* DDHSnapPushAnimator.m in Sources */,
+				F2F919D51901258B004FCB32 /* DDHGravityRotationPushAnimator.m in Sources */,
+				F2D535FD1901602300944D18 /* DDHGravityPopAnimator.m in Sources */,
 				F297E5A018FDB2C300D73C3A /* DDHAppDelegate.m in Sources */,
 				F20522B818FF14CF00D93007 /* DDHSnapPopAnimator.m in Sources */,
+				F2F919D219006C39004FCB32 /* DDHTransitionAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +436,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewControllerTransitionPlayground/ViewControllerTransitionPlayground-Prefix.pch";
 				INFOPLIST_FILE = "ViewControllerTransitionPlayground/ViewControllerTransitionPlayground-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -437,6 +450,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewControllerTransitionPlayground/ViewControllerTransitionPlayground-Prefix.pch";
 				INFOPLIST_FILE = "ViewControllerTransitionPlayground/ViewControllerTransitionPlayground-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
