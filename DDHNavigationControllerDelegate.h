@@ -28,9 +28,12 @@
 typedef NS_ENUM(NSUInteger, DDH_TRANSITION_TYPE) {
     DDH_TRANSITION_TYPE_SNAP = 0,
     DDH_TRANSITION_TYPE_GRAVITY,
-    DDH_TRANSITION_TYPE_GRAVITY_PLUS_ROTATION
+    DDH_TRANSITION_TYPE_GRAVITY_PLUS_ROTATION,
+    DDH_TRANSITION_TYPE_NUMBER_OF_TYPES
 };
 
 @interface DDHNavigationControllerDelegate : NSObject <UINavigationControllerDelegate>
 @property (nonatomic, assign) NSInteger transitionType;
+
+- (instancetype)initWithTransitionType:(NSInteger)transitionType;
 @end

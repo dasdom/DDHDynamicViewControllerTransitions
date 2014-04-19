@@ -34,6 +34,18 @@
 
 @implementation DDHNavigationControllerDelegate
 
+- (instancetype)initWithTransitionType:(NSInteger)transitionType {
+    self = [super init];
+    if (self) {
+        if (transitionType >= DDH_TRANSITION_TYPE_NUMBER_OF_TYPES) {
+            NSAssert1(false, @"%d is not a valid type.", transitionType);
+            transitionType = 0;
+        }
+        self.transitionType = transitionType;
+    }
+    return self;
+}
+
 #pragma mark - UINavigationControllerDelegate
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
     if (operation == UINavigationControllerOperationPush) {
