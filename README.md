@@ -53,7 +53,7 @@ Example:
 
 ```
 
-**Important**: The navigation controller assigns it's delegate. Therefore you will need a reference to the navigation controller delegate somewhere. Eighther in Interface Builder of in code like in the example.
+**Important**: The navigation controller assigns it's delegate. Therefore you will need a reference to the navigation controller delegate somewhere. You can do this eighther in Interface Builder of in code like in the example.
 
 To change the transition type on the fly set the transitionType of the navigation controller delegate.
 
