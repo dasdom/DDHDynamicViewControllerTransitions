@@ -5,8 +5,17 @@
 
 Custom view controller transitions using `UIDynamic` behaviors.
 
-<p align="center"><img src="http://recordit.co/S508shUd4K.gif"/></p>
+Snap
 
+![](https://raw.githubusercontent.com/dasdom/DDHDynamicViewControllerTransitions/master/screencasts/snap.gif)
+
+Gravity
+
+![](https://raw.githubusercontent.com/dasdom/DDHDynamicViewControllerTransitions/master/screencasts/gravity.gif)
+
+Gravity + Rotation
+
+![](https://raw.githubusercontent.com/dasdom/DDHDynamicViewControllerTransitions/master/screencasts/gravity_rotation.gif)
 
 ## Usage
 
