@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F20522B818FF14CF00D93007 /* DDHSnapPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F20522B518FF14CF00D93007 /* DDHSnapPopAnimator.m */; };
-		F20522B918FF14CF00D93007 /* DDHSnapPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F20522B718FF14CF00D93007 /* DDHSnapPushAnimator.m */; };
-		F20522BC18FF91C100D93007 /* DDHGravityPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F20522BB18FF91C100D93007 /* DDHGravityPushAnimator.m */; };
 		F297E59018FDB2C300D73C3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F297E58F18FDB2C300D73C3A /* Foundation.framework */; };
 		F297E59218FDB2C300D73C3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F297E59118FDB2C300D73C3A /* CoreGraphics.framework */; };
 		F297E59418FDB2C300D73C3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F297E59318FDB2C300D73C3A /* UIKit.framework */; };
@@ -25,10 +22,14 @@
 		F297E5B418FDB2C300D73C3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F297E59318FDB2C300D73C3A /* UIKit.framework */; };
 		F297E5BC18FDB2C300D73C3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F297E5BA18FDB2C300D73C3A /* InfoPlist.strings */; };
 		F297E5BE18FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F297E5BD18FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests.m */; };
-		F297E5C918FDB5B700D73C3A /* DDHNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F297E5C818FDB5B700D73C3A /* DDHNavigationControllerDelegate.m */; };
-		F2D535FD1901602300944D18 /* DDHGravityPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D535FC1901602300944D18 /* DDHGravityPopAnimator.m */; };
-		F2F919D219006C39004FCB32 /* DDHTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F919D119006C39004FCB32 /* DDHTransitionAnimator.m */; };
-		F2F919D51901258B004FCB32 /* DDHGravityRotationPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F919D41901258B004FCB32 /* DDHGravityRotationPushAnimator.m */; };
+		F2A1804A1901BE9900E5735D /* DDHGravityPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1803D1901BE9900E5735D /* DDHGravityPopAnimator.m */; };
+		F2A1804B1901BE9900E5735D /* DDHGravityPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1803F1901BE9900E5735D /* DDHGravityPushAnimator.m */; };
+		F2A1804C1901BE9900E5735D /* DDHGravityRotationPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A180411901BE9900E5735D /* DDHGravityRotationPopAnimator.m */; };
+		F2A1804D1901BE9900E5735D /* DDHGravityRotationPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A180431901BE9900E5735D /* DDHGravityRotationPushAnimator.m */; };
+		F2A1804E1901BE9900E5735D /* DDHSnapPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A180451901BE9900E5735D /* DDHSnapPopAnimator.m */; };
+		F2A1804F1901BE9900E5735D /* DDHSnapPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A180471901BE9900E5735D /* DDHSnapPushAnimator.m */; };
+		F2A180501901BE9900E5735D /* DDHTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A180491901BE9900E5735D /* DDHTransitionAnimator.m */; };
+		F2A1805319026BD500E5735D /* DDHNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A1805219026BD500E5735D /* DDHNavigationControllerDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,41 +43,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F20522B418FF14CF00D93007 /* DDHSnapPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHSnapPopAnimator.h; path = TransitionAnimators/DDHSnapPopAnimator.h; sourceTree = "<group>"; };
-		F20522B518FF14CF00D93007 /* DDHSnapPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHSnapPopAnimator.m; path = TransitionAnimators/DDHSnapPopAnimator.m; sourceTree = "<group>"; };
-		F20522B618FF14CF00D93007 /* DDHSnapPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHSnapPushAnimator.h; path = TransitionAnimators/DDHSnapPushAnimator.h; sourceTree = "<group>"; };
-		F20522B718FF14CF00D93007 /* DDHSnapPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHSnapPushAnimator.m; path = TransitionAnimators/DDHSnapPushAnimator.m; sourceTree = "<group>"; };
-		F20522BA18FF91C100D93007 /* DDHGravityPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHGravityPushAnimator.h; path = TransitionAnimators/DDHGravityPushAnimator.h; sourceTree = "<group>"; };
-		F20522BB18FF91C100D93007 /* DDHGravityPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHGravityPushAnimator.m; path = TransitionAnimators/DDHGravityPushAnimator.m; sourceTree = "<group>"; };
 		F297E58C18FDB2C300D73C3A /* ViewControllerTransitionPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerTransitionPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F297E58F18FDB2C300D73C3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F297E59118FDB2C300D73C3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F297E59318FDB2C300D73C3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F297E59718FDB2C300D73C3A /* ViewControllerTransitionPlayground-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewControllerTransitionPlayground-Info.plist"; sourceTree = "<group>"; };
 		F297E59918FDB2C300D73C3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F297E59B18FDB2C300D73C3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F297E59B18FDB2C300D73C3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		F297E59D18FDB2C300D73C3A /* ViewControllerTransitionPlayground-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewControllerTransitionPlayground-Prefix.pch"; sourceTree = "<group>"; };
-		F297E59E18FDB2C300D73C3A /* DDHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDHAppDelegate.h; sourceTree = "<group>"; };
-		F297E59F18FDB2C300D73C3A /* DDHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDHAppDelegate.m; sourceTree = "<group>"; };
+		F297E59E18FDB2C300D73C3A /* DDHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DDHAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F297E59F18FDB2C300D73C3A /* DDHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDHAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		F297E5A218FDB2C300D73C3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F297E5A418FDB2C300D73C3A /* DDHMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDHMasterViewController.h; sourceTree = "<group>"; };
-		F297E5A518FDB2C300D73C3A /* DDHMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDHMasterViewController.m; sourceTree = "<group>"; };
-		F297E5A718FDB2C300D73C3A /* DDHDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDHDetailViewController.h; sourceTree = "<group>"; };
-		F297E5A818FDB2C300D73C3A /* DDHDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDHDetailViewController.m; sourceTree = "<group>"; };
+		F297E5A418FDB2C300D73C3A /* DDHMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DDHMasterViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F297E5A518FDB2C300D73C3A /* DDHMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDHMasterViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F297E5A718FDB2C300D73C3A /* DDHDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DDHDetailViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F297E5A818FDB2C300D73C3A /* DDHDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDHDetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		F297E5AA18FDB2C300D73C3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F297E5B018FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerTransitionPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F297E5B118FDB2C300D73C3A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F297E5B918FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewControllerTransitionPlaygroundTests-Info.plist"; sourceTree = "<group>"; };
 		F297E5BB18FDB2C300D73C3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F297E5BD18FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTransitionPlaygroundTests.m; sourceTree = "<group>"; };
-		F297E5C718FDB5B700D73C3A /* DDHNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHNavigationControllerDelegate.h; sourceTree = "<group>"; };
-		F297E5C818FDB5B700D73C3A /* DDHNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHNavigationControllerDelegate.m; sourceTree = "<group>"; };
-		F2D535FB1901602300944D18 /* DDHGravityPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHGravityPopAnimator.h; path = TransitionAnimators/DDHGravityPopAnimator.h; sourceTree = "<group>"; };
-		F2D535FC1901602300944D18 /* DDHGravityPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHGravityPopAnimator.m; path = TransitionAnimators/DDHGravityPopAnimator.m; sourceTree = "<group>"; };
-		F2F919D019006C39004FCB32 /* DDHTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHTransitionAnimator.h; path = TransitionAnimators/DDHTransitionAnimator.h; sourceTree = "<group>"; };
-		F2F919D119006C39004FCB32 /* DDHTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHTransitionAnimator.m; path = TransitionAnimators/DDHTransitionAnimator.m; sourceTree = "<group>"; };
-		F2F919D31901258B004FCB32 /* DDHGravityRotationPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHGravityRotationPushAnimator.h; path = TransitionAnimators/DDHGravityRotationPushAnimator.h; sourceTree = "<group>"; };
-		F2F919D41901258B004FCB32 /* DDHGravityRotationPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHGravityRotationPushAnimator.m; path = TransitionAnimators/DDHGravityRotationPushAnimator.m; sourceTree = "<group>"; };
+		F297E5BD18FDB2C300D73C3A /* ViewControllerTransitionPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewControllerTransitionPlaygroundTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F2A1803C1901BE9900E5735D /* DDHGravityPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DDHGravityPopAnimator.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F2A1803D1901BE9900E5735D /* DDHGravityPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDHGravityPopAnimator.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F2A1803E1901BE9900E5735D /* DDHGravityPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DDHGravityPushAnimator.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F2A1803F1901BE9900E5735D /* DDHGravityPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDHGravityPushAnimator.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F2A180401901BE9900E5735D /* DDHGravityRotationPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DDHGravityRotationPopAnimator.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F2A180411901BE9900E5735D /* DDHGravityRotationPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDHGravityRotationPopAnimator.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F2A180421901BE9900E5735D /* DDHGravityRotationPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DDHGravityRotationPushAnimator.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F2A180431901BE9900E5735D /* DDHGravityRotationPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDHGravityRotationPushAnimator.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F2A180441901BE9900E5735D /* DDHSnapPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DDHSnapPopAnimator.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F2A180451901BE9900E5735D /* DDHSnapPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDHSnapPopAnimator.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F2A180461901BE9900E5735D /* DDHSnapPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DDHSnapPushAnimator.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F2A180471901BE9900E5735D /* DDHSnapPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDHSnapPushAnimator.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F2A180481901BE9900E5735D /* DDHTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DDHTransitionAnimator.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F2A180491901BE9900E5735D /* DDHTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDHTransitionAnimator.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F2A1805119026BD500E5735D /* DDHNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DDHNavigationControllerDelegate.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F2A1805219026BD500E5735D /* DDHNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DDHNavigationControllerDelegate.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,25 +106,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F20522B318FF14B900D93007 /* TransitionAnimators */ = {
-			isa = PBXGroup;
-			children = (
-				F2F919D019006C39004FCB32 /* DDHTransitionAnimator.h */,
-				F2F919D119006C39004FCB32 /* DDHTransitionAnimator.m */,
-				F20522B618FF14CF00D93007 /* DDHSnapPushAnimator.h */,
-				F20522B718FF14CF00D93007 /* DDHSnapPushAnimator.m */,
-				F20522B418FF14CF00D93007 /* DDHSnapPopAnimator.h */,
-				F20522B518FF14CF00D93007 /* DDHSnapPopAnimator.m */,
-				F20522BA18FF91C100D93007 /* DDHGravityPushAnimator.h */,
-				F20522BB18FF91C100D93007 /* DDHGravityPushAnimator.m */,
-				F2D535FB1901602300944D18 /* DDHGravityPopAnimator.h */,
-				F2D535FC1901602300944D18 /* DDHGravityPopAnimator.m */,
-				F2F919D31901258B004FCB32 /* DDHGravityRotationPushAnimator.h */,
-				F2F919D41901258B004FCB32 /* DDHGravityRotationPushAnimator.m */,
-			);
-			name = TransitionAnimators;
-			sourceTree = "<group>";
-		};
 		F297E58318FDB2C300D73C3A = {
 			isa = PBXGroup;
 			children = (
@@ -162,9 +146,9 @@
 				F297E5A518FDB2C300D73C3A /* DDHMasterViewController.m */,
 				F297E5A718FDB2C300D73C3A /* DDHDetailViewController.h */,
 				F297E5A818FDB2C300D73C3A /* DDHDetailViewController.m */,
-				F297E5C718FDB5B700D73C3A /* DDHNavigationControllerDelegate.h */,
-				F297E5C818FDB5B700D73C3A /* DDHNavigationControllerDelegate.m */,
-				F20522B318FF14B900D93007 /* TransitionAnimators */,
+				F2A1805119026BD500E5735D /* DDHNavigationControllerDelegate.h */,
+				F2A1805219026BD500E5735D /* DDHNavigationControllerDelegate.m */,
+				F2A1803B1901BE9900E5735D /* DynamicTransitionAnimators */,
 				F297E5AA18FDB2C300D73C3A /* Images.xcassets */,
 				F297E59618FDB2C300D73C3A /* Supporting Files */,
 			);
@@ -199,6 +183,27 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		F2A1803B1901BE9900E5735D /* DynamicTransitionAnimators */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1803C1901BE9900E5735D /* DDHGravityPopAnimator.h */,
+				F2A1803D1901BE9900E5735D /* DDHGravityPopAnimator.m */,
+				F2A1803E1901BE9900E5735D /* DDHGravityPushAnimator.h */,
+				F2A1803F1901BE9900E5735D /* DDHGravityPushAnimator.m */,
+				F2A180401901BE9900E5735D /* DDHGravityRotationPopAnimator.h */,
+				F2A180411901BE9900E5735D /* DDHGravityRotationPopAnimator.m */,
+				F2A180421901BE9900E5735D /* DDHGravityRotationPushAnimator.h */,
+				F2A180431901BE9900E5735D /* DDHGravityRotationPushAnimator.m */,
+				F2A180441901BE9900E5735D /* DDHSnapPopAnimator.h */,
+				F2A180451901BE9900E5735D /* DDHSnapPopAnimator.m */,
+				F2A180461901BE9900E5735D /* DDHSnapPushAnimator.h */,
+				F2A180471901BE9900E5735D /* DDHSnapPushAnimator.m */,
+				F2A180481901BE9900E5735D /* DDHTransitionAnimator.h */,
+				F2A180491901BE9900E5735D /* DDHTransitionAnimator.m */,
+			);
+			path = DynamicTransitionAnimators;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -298,17 +303,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A180501901BE9900E5735D /* DDHTransitionAnimator.m in Sources */,
+				F2A1804F1901BE9900E5735D /* DDHSnapPushAnimator.m in Sources */,
+				F2A1804A1901BE9900E5735D /* DDHGravityPopAnimator.m in Sources */,
+				F2A1804D1901BE9900E5735D /* DDHGravityRotationPushAnimator.m in Sources */,
 				F297E5A618FDB2C300D73C3A /* DDHMasterViewController.m in Sources */,
+				F2A1805319026BD500E5735D /* DDHNavigationControllerDelegate.m in Sources */,
+				F2A1804C1901BE9900E5735D /* DDHGravityRotationPopAnimator.m in Sources */,
 				F297E59C18FDB2C300D73C3A /* main.m in Sources */,
-				F297E5C918FDB5B700D73C3A /* DDHNavigationControllerDelegate.m in Sources */,
-				F20522BC18FF91C100D93007 /* DDHGravityPushAnimator.m in Sources */,
+				F2A1804E1901BE9900E5735D /* DDHSnapPopAnimator.m in Sources */,
 				F297E5A918FDB2C300D73C3A /* DDHDetailViewController.m in Sources */,
-				F20522B918FF14CF00D93007 /* DDHSnapPushAnimator.m in Sources */,
-				F2F919D51901258B004FCB32 /* DDHGravityRotationPushAnimator.m in Sources */,
-				F2D535FD1901602300944D18 /* DDHGravityPopAnimator.m in Sources */,
+				F2A1804B1901BE9900E5735D /* DDHGravityPushAnimator.m in Sources */,
 				F297E5A018FDB2C300D73C3A /* DDHAppDelegate.m in Sources */,
-				F20522B818FF14CF00D93007 /* DDHSnapPopAnimator.m in Sources */,
-				F2F919D219006C39004FCB32 /* DDHTransitionAnimator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
