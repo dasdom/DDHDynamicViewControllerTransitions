@@ -5,6 +5,9 @@
 
 Custom view controller transitions using `UIDynamic` behaviors.
 
+<p align="center"><img src="http://recordit.co/S508shUd4K.gif"/></p>
+
+
 ## Usage
 
 Create an instance of `DDHNavigationControllerDelegate` and make it the delegate of you navigation controller.
