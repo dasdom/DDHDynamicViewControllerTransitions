@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DDHDynamicViewControllerTransitions"
-  s.version          = "0.1.0"
+  s.version          = "0.9.0"
   s.summary          = "View controller transitions using UIDynamics."
   s.homepage         = "https://github.com/dasdom/DDHDynamicViewControllerTransitions"
   s.license          = 'MIT'
