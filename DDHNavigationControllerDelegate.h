@@ -25,6 +25,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DDHNavigationControllerDelegate : NSObject <UINavigationControllerDelegate>
+typedef NS_ENUM(NSUInteger, DDH_TRANSITION_TYPE) {
+    DDH_TRANSITION_TYPE_SNAP = 0,
+    DDH_TRANSITION_TYPE_GRAVITY,
+    DDH_TRANSITION_TYPE_GRAVITY_PLUS_ROTATION
+};
 
+@interface DDHNavigationControllerDelegate : NSObject <UINavigationControllerDelegate>
+@property (nonatomic, assign) NSInteger transitionType;
 @end

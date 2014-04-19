@@ -10,6 +10,8 @@
 
 #import "DDHDetailViewController.h"
 
+#import "DDHNavigationControllerDelegate.h"
+
 @interface DDHMasterViewController ()
 @property (nonatomic, strong) NSArray *animatorNames;
 @end
@@ -112,6 +114,7 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = self.animatorNames[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
+        ((DDHNavigationControllerDelegate*)self.navigationController.delegate).transitionType = indexPath.row;
     }
 }
 
