@@ -53,20 +53,28 @@
     UIDynamicAnimator *animator = [[UIDynamicAnimator alloc] initWithReferenceView:[transitionContext containerView]];
     
     // Add behaviors
-    UIGravityBehavior *gravity = [[UIGravityBehavior alloc] initWithItems:@[fromViewController.view]];
-    
-    CGPoint anchorPoint = CGPointMake(0.0f, fromViewController.view.frame.size.height+10.0f);
-    UIAttachmentBehavior *attachment1 = [[UIAttachmentBehavior alloc] initWithItem:fromViewController.view offsetFromCenter:UIOffsetMake(-center.x, center.y) attachedToAnchor:anchorPoint];
+    UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[fromViewController.view]];
+//    gravityBehavior.gravityDirection = CGVectorMake(0, -1);
+
+    CGPoint anchorPoint = CGPointMake(fromViewController.view.frame.size.width, fromViewController.view.frame.size.height+10.0f);
+    UIAttachmentBehavior *attachment1 = [[UIAttachmentBehavior alloc] initWithItem:fromViewController.view offsetFromCenter:UIOffsetMake(center.x, center.y) attachedToAnchor:anchorPoint];
     attachment1.length = 10.0f;
     
-    UIAttachmentBehavior *attachment2 = [[UIAttachmentBehavior alloc] initWithItem:fromViewController.view offsetFromCenter:UIOffsetMake(-center.x+100.0f, center.y) attachedToAnchor:anchorPoint];
+    UIAttachmentBehavior *attachment2 = [[UIAttachmentBehavior alloc] initWithItem:fromViewController.view offsetFromCenter:UIOffsetMake(center.x-100.0f, center.y) attachedToAnchor:anchorPoint];
     attachment2.length = 100.5f;
+
+//    CGPoint anchorPoint = CGPointMake(0.0f, -10.0f);
+//    UIAttachmentBehavior *attachment1 = [[UIAttachmentBehavior alloc] initWithItem:fromViewController.view offsetFromCenter:UIOffsetMake(-center.x, -center.y) attachedToAnchor:anchorPoint];
+//    attachment1.length = 10.0f;
+//    
+//    UIAttachmentBehavior *attachment2 = [[UIAttachmentBehavior alloc] initWithItem:fromViewController.view offsetFromCenter:UIOffsetMake(-center.x+100.0f, -center.y) attachedToAnchor:anchorPoint];
+//    attachment2.length = 100.5f;
     
     UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[fromViewController.view] mode:UIPushBehaviorModeInstantaneous];
-    pushBehavior.angle = M_PI_2;
-    pushBehavior.magnitude = 100.0;
+    pushBehavior.angle = 0;
+    pushBehavior.magnitude = 200.0;
     
-    [animator addBehavior:gravity];
+    [animator addBehavior:gravityBehavior];
     [animator addBehavior:attachment1];
     [animator addBehavior:attachment2];
     [animator addBehavior:pushBehavior];

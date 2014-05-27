@@ -51,9 +51,10 @@
    
     // Add behaviors
     UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[fromViewController.view]];
+    gravityBehavior.gravityDirection = CGVectorMake(0, -1);
     
     UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[fromViewController.view] mode:UIPushBehaviorModeInstantaneous];
-    pushBehavior.angle = M_PI_2;
+    pushBehavior.angle = 3*M_PI_2;
     pushBehavior.magnitude = 100.0;
     [pushBehavior setTargetOffsetFromCenter:UIOffsetMake(30.0f, 0.0f) forItem:fromViewController.view];
 

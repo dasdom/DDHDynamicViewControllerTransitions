@@ -26,6 +26,9 @@
 
 #import "DDHTransitionAnimator.h"
 
+/**
+ *  Pop animator for snap behavior
+ */
 @interface DDHSnapPopAnimator : DDHTransitionAnimator
 
 @end

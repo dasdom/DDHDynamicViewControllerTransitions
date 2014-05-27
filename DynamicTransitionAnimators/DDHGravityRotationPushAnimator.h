@@ -26,6 +26,9 @@
 
 #import "DDHTransitionAnimator.h"
 
+/**
+ *  Push animator for gravity+rotation behavior
+ */
 @interface DDHGravityRotationPushAnimator : DDHTransitionAnimator
 
 @end

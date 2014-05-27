@@ -26,6 +26,9 @@
 
 #import "DDHTransitionAnimator.h"
 
+/**
+ *  Pop animator for gravity+rotation behavior
+ */
 @interface DDHGravityRotationPopAnimator : DDHTransitionAnimator
 
 @end
